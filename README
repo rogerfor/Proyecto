@@ -1,0 +1,28 @@
+Proyecto Programación Avanzada - UMG Zacapa
+
+Este es un proyecto hecho con netbeans, escrito en java, que haciendo uso de una base de datos mysql, permite leer, crear, guardar y borrar datos, de una base de datos, que a su vez, hace uso de IReport, que permite la generación de un reporte, segun el número de matricula de alumno que indique.
+
+REQUERIMIENTOS.
+
+--> JRE 1.6 o posterior
+--> MYSQL 5.5.16 o posterior.
+
+INSTRUCCIONES DE USO.
+
+Para su correcto funcionamiento, desde la linea de comandos de mysql, copiar y pegar el siguiente código SQL.
+
+CREATE SCHEMA Reporte;
+USE Reporte;
+CREATE TABLE Datos(
+Matricula CHAR(11) PRIMARY KEY,
+Nombre VARCHAR(25),
+Apellidos VARCHAR(50),
+Domicilio VARCHAR(30),
+Grupo VARCHAR(8));
+
+
+Luego desde la misma aplicación, ingresar los datos y guardar, luego en la pestaña reporte, ingrese un numero de matricula, y presione generar.
+
+Liberarado bajo GPL V3.
+
+2011.
